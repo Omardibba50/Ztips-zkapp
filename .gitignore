@@ -1,22 +1,47 @@
-# Dependencies
+# Node.js dependencies
 node_modules/
-/.pnp
+**/node_modules/
+
+# Yarn and npm lock files
+yarn.lock
+package-lock.json
+
+# PnP
+.pnp
 .pnp.js
 
 # Testing
 /coverage
+/frontend/coverage
+/backend/coverage
+/contracts/coverage
+/contracts/coverage.json
 
-# Production
+# Production build outputs
 /build
+/frontend/build
+/backend/build
+/dist
+/out
 
-# Misc
+# Miscellaneous
 .DS_Store
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/backend/.env
+/contracts/.env
 
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -27,52 +52,35 @@ yarn-error.log*
 *.swp
 *.swo
 
-# Hardhat files
+# Hardhat and Solidity files
 cache/
 artifacts/
+contracts/build/
+contracts/cache
+contracts/artifacts
 
 # TypeChain files
 typechain
 typechain-types
-
-# solidity-coverage files
-coverage
-coverage.json
+/contracts/typechain
+/contracts/typechain-types
 
 # Hardhat Plugin files
 .openzeppelin/
 
-# Ignore any built contracts
-contracts/build/
-
-# Ignore gas reporter files
-gas-report.txt
-
-# Ignore any local blockchain data
+# Local blockchain data
 /data
 
-# Ignore compiled output
-dist/
-out/
-
-# Ignore Truffle build directory
+# Truffle build directory
 build/
 
-# Ignore any private keys
+# Private keys and sensitive files
 **/private_key.txt
-
-# Ignore any address files
 **/address.json
-
-# Ignore any ABI files
 **/abi.json
 
 # Polygon-specific
 .polygon
-
-# Logs
-logs
-*.log
 
 # Runtime data
 pids
@@ -80,61 +88,30 @@ pids
 *.seed
 *.pid.lock
 
-# Ignore any temporary files
+# Temporary files
 *.tmp
 *.temp
 
-# Ignore any backup files
+# Backup files
 *.bak
 
-# Ignore any compiled Python files
+# Compiled Python files
 *.pyc
 
-# Ignore any local configuration files
+# Local configuration files
 config.local.js
 
-# Frontend specific
-# dependencies
-/frontend/node_modules
-
-# testing
-/frontend/coverage
-
-# production
-/frontend/build
-
-# misc
-/frontend/.env
-/frontend/.env.local
-/frontend/.env.development.local
-/frontend/.env.test.local
-/frontend/.env.production.local
-
-# Backend specific
-# dependencies
-/backend/node_modules
-
-# environment variables
-/backend/.env
-
-# Contracts specific
-# dependencies
-/contracts/node_modules
-
-# environment variables
-/contracts/.env
-
-# Hardhat files
-/contracts/cache
-/contracts/artifacts
-
-# TypeChain files
-/contracts/typechain
-/contracts/typechain-types
-
-# solidity-coverage files
-/contracts/coverage
-/contracts/coverage.json
+# Gas reporter files
+gas-report.txt
 
 # Ignore contract deployment output
 /contracts/deployments
+
+# Frontend specific
+/frontend/node_modules
+
+# Backend specific
+/backend/node_modules
+
+# Contracts specific
+/contracts/node_modules
