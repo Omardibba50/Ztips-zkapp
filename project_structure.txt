@@ -1,0 +1,48 @@
+ztips-zkapp/
+├── backend/
+│   ├── package.json
+│   ├── server.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── bounties.js
+│   │   └── tips.js
+│   └── utils/
+│       └── zkProofGenerator.js
+├── contracts/
+│   ├── contracts/
+│   │   ├── ZTips.sol
+│   │   └── ZTipsToken.sol
+│   ├── scripts/
+│   │   └── deploy.js
+│   ├── test/
+│   │   └── ZTips.test.js
+│   ├── hardhat.config.js
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── manifest.json
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Dashboard.js
+│   │   │   ├── DiscoverBounties.js
+│   │   │   ├── InvestigatorDashboard.js
+│   │   │   ├── Sidebar.js
+│   │   │   └── TipsterDashboard.js
+│   │   ├── context/
+│   │   │   └── Web3Context.js
+│   │   ├── utils/
+│   │   │   └── web3.js
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── package.json
+│   └── tailwind.config.js
+├── ztips-core/
+│   ├── Cargo.toml
+│   ├── src/
+│   │   └── lib.rs
+│   └── methods/
+│       └── guest/
+│           └── src/
+│               └── main.rs
+└── package.json

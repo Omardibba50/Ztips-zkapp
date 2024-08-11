@@ -1,0 +1,140 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Hardhat files
+cache/
+artifacts/
+
+# TypeChain files
+typechain
+typechain-types
+
+# solidity-coverage files
+coverage
+coverage.json
+
+# Hardhat Plugin files
+.openzeppelin/
+
+# Ignore any built contracts
+contracts/build/
+
+# Ignore gas reporter files
+gas-report.txt
+
+# Ignore any local blockchain data
+/data
+
+# Ignore compiled output
+dist/
+out/
+
+# Ignore Truffle build directory
+build/
+
+# Ignore any private keys
+**/private_key.txt
+
+# Ignore any address files
+**/address.json
+
+# Ignore any ABI files
+**/abi.json
+
+# Polygon-specific
+.polygon
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore any temporary files
+*.tmp
+*.temp
+
+# Ignore any backup files
+*.bak
+
+# Ignore any compiled Python files
+*.pyc
+
+# Ignore any local configuration files
+config.local.js
+
+# Frontend specific
+# dependencies
+/frontend/node_modules
+
+# testing
+/frontend/coverage
+
+# production
+/frontend/build
+
+# misc
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Backend specific
+# dependencies
+/backend/node_modules
+
+# environment variables
+/backend/.env
+
+# Contracts specific
+# dependencies
+/contracts/node_modules
+
+# environment variables
+/contracts/.env
+
+# Hardhat files
+/contracts/cache
+/contracts/artifacts
+
+# TypeChain files
+/contracts/typechain
+/contracts/typechain-types
+
+# solidity-coverage files
+/contracts/coverage
+/contracts/coverage.json
+
+# Ignore contract deployment output
+/contracts/deployments
